@@ -14,6 +14,11 @@
 		5A84CDF728297D08003781B6 /* DNVNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CDF628297D08003781B6 /* DNVNewTests.swift */; };
 		5A84CE0128297D08003781B6 /* DNVNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE0028297D08003781B6 /* DNVNewUITests.swift */; };
 		5A84CE0328297D08003781B6 /* DNVNewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE0228297D08003781B6 /* DNVNewUITestsLaunchTests.swift */; };
+		5A84CE1228297DC6003781B6 /* DeviceCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1128297DC6003781B6 /* DeviceCameraView.swift */; };
+		5A84CE1728297F05003781B6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1528297F05003781B6 /* CameraViewController.swift */; };
+		5A84CE1828297F05003781B6 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A84CE1628297F05003781B6 /* CameraViewController.xib */; };
+		5A84CE1A28298450003781B6 /* SelectableCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1928298450003781B6 /* SelectableCameraView.swift */; };
+		5A84CE1C282984FF003781B6 /* AVCaptureDevice+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		5A84CDFC28297D08003781B6 /* DNVNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNVNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A84CE0028297D08003781B6 /* DNVNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNVNewUITests.swift; sourceTree = "<group>"; };
 		5A84CE0228297D08003781B6 /* DNVNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNVNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A84CE1128297DC6003781B6 /* DeviceCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCameraView.swift; sourceTree = "<group>"; };
+		5A84CE1528297F05003781B6 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5A84CE1628297F05003781B6 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		5A84CE1928298450003781B6 /* SelectableCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCameraView.swift; sourceTree = "<group>"; };
+		5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 			children = (
 				5A84CDE428297D02003781B6 /* DNVNewApp.swift */,
 				5A84CDE628297D02003781B6 /* ContentView.swift */,
+				5A84CE1128297DC6003781B6 /* DeviceCameraView.swift */,
+				5A84CE1528297F05003781B6 /* CameraViewController.swift */,
+				5A84CE1928298450003781B6 /* SelectableCameraView.swift */,
+				5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */,
+				5A84CE1628297F05003781B6 /* CameraViewController.xib */,
 				5A84CDE828297D08003781B6 /* Assets.xcassets */,
 				5A84CDED28297D08003781B6 /* DNVNew.entitlements */,
 				5A84CDEA28297D08003781B6 /* Preview Content */,
@@ -233,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84CE1828297F05003781B6 /* CameraViewController.xib in Resources */,
 				5A84CDEC28297D08003781B6 /* Preview Assets.xcassets in Resources */,
 				5A84CDE928297D08003781B6 /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84CE1C282984FF003781B6 /* AVCaptureDevice+UI.swift in Sources */,
 				5A84CDE728297D02003781B6 /* ContentView.swift in Sources */,
+				5A84CE1728297F05003781B6 /* CameraViewController.swift in Sources */,
 				5A84CDE528297D02003781B6 /* DNVNewApp.swift in Sources */,
+				5A84CE1A28298450003781B6 /* SelectableCameraView.swift in Sources */,
+				5A84CE1228297DC6003781B6 /* DeviceCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +444,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to display a preview within the app.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to display a preview within the app.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
