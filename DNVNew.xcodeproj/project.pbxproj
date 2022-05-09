@@ -19,6 +19,8 @@
 		5A84CE1828297F05003781B6 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A84CE1628297F05003781B6 /* CameraViewController.xib */; };
 		5A84CE1A28298450003781B6 /* SelectableCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1928298450003781B6 /* SelectableCameraView.swift */; };
 		5A84CE1C282984FF003781B6 /* AVCaptureDevice+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */; };
+		5AD74F142829993700E9148D /* RecordingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD74F132829993700E9148D /* RecordingState.swift */; };
+		5AD74F1628299FDD00E9148D /* CameraViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD74F1528299FDD00E9148D /* CameraViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		5A84CE1628297F05003781B6 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		5A84CE1928298450003781B6 /* SelectableCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCameraView.swift; sourceTree = "<group>"; };
 		5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+UI.swift"; sourceTree = "<group>"; };
+		5AD74F132829993700E9148D /* RecordingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingState.swift; sourceTree = "<group>"; };
+		5AD74F1528299FDD00E9148D /* CameraViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,9 @@
 				5A84CDE628297D02003781B6 /* ContentView.swift */,
 				5A84CE1128297DC6003781B6 /* DeviceCameraView.swift */,
 				5A84CE1528297F05003781B6 /* CameraViewController.swift */,
+				5AD74F1528299FDD00E9148D /* CameraViewControllerDelegate.swift */,
 				5A84CE1928298450003781B6 /* SelectableCameraView.swift */,
+				5AD74F132829993700E9148D /* RecordingState.swift */,
 				5A84CE1B282984FF003781B6 /* AVCaptureDevice+UI.swift */,
 				5A84CE1628297F05003781B6 /* CameraViewController.xib */,
 				5A84CDE828297D08003781B6 /* Assets.xcassets */,
@@ -275,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD74F1628299FDD00E9148D /* CameraViewControllerDelegate.swift in Sources */,
 				5A84CE1C282984FF003781B6 /* AVCaptureDevice+UI.swift in Sources */,
 				5A84CDE728297D02003781B6 /* ContentView.swift in Sources */,
 				5A84CE1728297F05003781B6 /* CameraViewController.swift in Sources */,
+				5AD74F142829993700E9148D /* RecordingState.swift in Sources */,
 				5A84CDE528297D02003781B6 /* DNVNewApp.swift in Sources */,
 				5A84CE1A28298450003781B6 /* SelectableCameraView.swift in Sources */,
 				5A84CE1228297DC6003781B6 /* DeviceCameraView.swift in Sources */,
@@ -367,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -450,6 +458,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.DNVNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.DNVNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
